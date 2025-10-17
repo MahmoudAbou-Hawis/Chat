@@ -43,7 +43,13 @@
 	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string> For Tacking photos in the app </string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+<key>NSPhotoLibraryUsageDescription</key>
+<string>We need access to your photo library to let you select images.</string>
+
 </dict>
 </plist>

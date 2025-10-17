@@ -1,6 +1,9 @@
 
 
 
+import 'dart:math';
+
+import 'package:chat/Presentation/screen/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -18,10 +21,13 @@ class _LayoutScreen extends State<LayoutScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Chat" ,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 34),),),
      body:  Column(key: Key("coloumn"),
           children: [
-          Expanded(child: Text("data"),),
+        Expanded(
+      child: index == 1 
+          ?  HomeScreen() 
+          : const Center(child: Text("data")),
+    ),
           Divider(
             color: Color(0xffC5BCBC),
           ),

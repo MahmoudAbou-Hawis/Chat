@@ -11,7 +11,7 @@ class CustomSearchBar extends StatelessWidget
   final List<Widget> Function(String text) onSearchTap;
   final List<Widget> Function(String text) ?onTextUpdate;
   final String? hintString;
-  final Function(Widget item ,BuildContext context) onElementClick;
+  final void Function(Widget item ,BuildContext context) onElementClick;
 
   CustomSearchBar({required this.onSearchTap, this.onTextUpdate ,this.hintString ,required this.onElementClick});
 
@@ -39,7 +39,6 @@ class CustomSearchBar extends StatelessWidget
                   children: [
                     Image.asset('assets/search.png',width:22,height: 22, ),
                                               const SizedBox(width: 8),
-
                     Text(hintString?? 'Search here...', style: TextStyle(color: Color.fromARGB(255, 207, 198, 198)),),
                 
                   ],
